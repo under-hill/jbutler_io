@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown/with-html';
 import { Link } from 'react-router-dom';
 import CyberGames2020 from '../posts/CyberGames2020.md';
 
@@ -27,7 +27,7 @@ class Post extends Component {
         let postName = this.props.queryPostName;
         if (validPostNames.includes(postName)) {
             fetch(CyberGames2020).then((response) => response.text()).then((text) => {
-                this.setState({ post: <ReactMarkdown source={text} /> })
+                this.setState({ post: <ReactMarkdown allowDangerousHtml source={text} /> })
             })
         } else {
             this.setState({ post: <p>Post not found</p> })

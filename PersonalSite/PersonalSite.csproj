@@ -21,6 +21,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="ClientApp\public\images\CyberGames2020\HSFP_Debugger.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ClientApp\public\images\CyberGames2020\HSFP_Logon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ClientApp\public\images\CyberGames2020\HSFP_Overview.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ClientApp\src\posts\CyberGames2020.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Storage\TFOTR.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
